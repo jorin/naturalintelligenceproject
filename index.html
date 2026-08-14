@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script type="text/javascript">
+      // React SPA routing helper
+      (function(spaLocation) {
+        if (spaLocation.search[1] === '/' ) {
+          var decoded = spaLocation.search.slice(1).split('&').map(function(search) { 
+            return search.replace(/~and~/g, '&') 
+          }).join('?');
+          window.history.replaceState(null, null, spaLocation.pathname.slice(0, -1) + decoded + spaLocation.hash);
+        }
+      }(window.location));
+    </script>
     <script type="module" crossorigin src="/naturalintelligenceproject/assets/index-Da3p4vgl.js"></script>
     <link rel="stylesheet" crossorigin href="/naturalintelligenceproject/assets/index-DxRBseAX.css">
   </head>
