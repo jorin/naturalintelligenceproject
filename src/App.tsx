@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import { useAppDispatch, useAppSelector } from './store/hooks';
 import { setCommonState } from './store/slices/common';
@@ -11,7 +11,7 @@ import heroImg from './assets/hero.png';
 import './App.css';
 
 const ViteBoilerplate = () => {
-  const count = useAppSelector(state => state.common.count || 0);
+  const count = useAppSelector(state => state.common.count || 0) as number;
   const dispatch = useAppDispatch();
 
   return (
@@ -129,6 +129,7 @@ const ViteBoilerplate = () => {
 const App = () => (
   <Routes>
     <Route path="/" element={<Welcome />} />
+    <Route path="/vite" element={<ViteBoilerplate />} />
   </Routes>
 );
 

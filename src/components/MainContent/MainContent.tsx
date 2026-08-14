@@ -1,4 +1,4 @@
-const MainContent = ({ children }) => (
+const MainContent = ({ children }: { children: any }) => (
   <div className='align-items-center d-flex justify-content-center min-vh-100 p-5'>
     <div className='container text-center'>
       {children}
