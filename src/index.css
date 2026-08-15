@@ -2,6 +2,40 @@ body {
   font-family: "Jost", sans-serif;
 }
 
+@keyframes fade-in-and-open {
+  0% {
+    max-height: 0;
+    opacity: 0;
+    text-align: center;
+  }
+  1% {
+    max-height: 1lh;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    max-height: 1lh;
+    opacity: 1;
+    text-align: unset;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  99% {
+    max-height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    max-height: none;
+  }
+}
+
+.fade-in-and-open {
+  animation: fade-in-and-open 6s ease-in-out forwards;
+  overflow: hidden;
+}
+
 .text-justify {
   text-align: justify;
 }

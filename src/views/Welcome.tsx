@@ -5,7 +5,7 @@ import SiteTitle from '../components/SiteTitle/SiteTitle';
 const Welcome = () => (
   <MainContent>
     <SiteTitle />
-    <ArticleBody>
+    <ArticleBody className='fade-in-and-open'>
       <p>Hi there, there is a human behind all of this, a single unit of human.</p>
       <p>That human, me, has been doing some thinking lately, and that's the reason this project exists.</p>
       <p>I've had a career in software since the mid-1990s-ish, and I've really enjoyed being a software engineer. But, these days that enjoyment is pretty regularly challenged by AI. In that work, I'm spending a lot of time reviewing really bad code written by an artificial intelligence, or otherwise accomodating it, in ways that don't particularly feel like things are getting faster or better, but certainly are soaking up my time and taking it away from what I really enjoy doing. While also possibly eventually, or soon, replacing me.</p>
