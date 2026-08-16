@@ -32,7 +32,7 @@ body {
 }
 
 .fade-in-and-open {
-  animation: fade-in-and-open 6s ease-in-out forwards;
+  animation: fade-in-and-open 5s ease-in-out forwards;
   overflow: hidden;
 }
 
